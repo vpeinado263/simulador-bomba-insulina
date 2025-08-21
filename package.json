@@ -3,7 +3,6 @@
     "prettier": "^3.6.2"
   },
   "scripts": {
-    "format": "prettier --write \"frontend/**/*.{js,jsx,ts,tsx,json,css,md}\" \"backend/**/*.{js,ts,json,css,md}\"",
-    "dev:frontend": "cd frontend && npm run dev"
+    "format": "prettier --write \"frontend/**/*.{js,jsx,ts,tsx,json,css,md}\" \"backend/**/*.{js,ts,json,css,md}\""
   }
 }
