@@ -1,4 +1,3 @@
-// eslint.config.js
 import { FlatCompat } from "@eslint/eslintrc";
 
 const compat = new FlatCompat({
@@ -17,7 +16,7 @@ export default [
     },
     rules: {
       "no-unused-vars": "warn",
-      "react/react-in-jsx-scope": "off", // Next.js no requiere import React
+      "react/react-in-jsx-scope": "off",
     },
   },
   {
