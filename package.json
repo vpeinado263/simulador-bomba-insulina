@@ -5,12 +5,15 @@
     "backend"
   ],
   "devDependencies": {
+    "concurrently": "^9.2.0",
     "eslint": "^9.33.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
     "prettier": "^3.6.2"
   },
   "scripts": {
-    "format": "prettier --write \"frontend/**/*.{js,jsx,ts,tsx,json,css,md}\" \"backend/**/*.{js,ts,json,css,md}\""
+    "format": "prettier --write \"frontend/**/*.{js,jsx,ts,tsx,json,css,md}\" \"backend/**/*.{js,ts,json,css,md}\"",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "dev": "concurrently \"npm run dev --workspace frontend\" \"npm run dev --workspace backend\""
   }
 }
