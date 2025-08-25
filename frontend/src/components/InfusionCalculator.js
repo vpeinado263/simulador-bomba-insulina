@@ -1,19 +1,19 @@
-import React from 'react'
-import { useState } from 'react'
+import React from 'react';
+import { useState } from 'react';
 
 const InfusionCalculator = () => {
-  const [dosis, setDosis] = useState('')
-  const [volumen, setVolumen] = useState('')
-  const [tiempo, setTiempo] = useState('')
-  const [resultado, setResultado] = useState(null)
+  const [dosis, setDosis] = useState('');
+  const [volumen, setVolumen] = useState('');
+  const [tiempo, setTiempo] = useState('');
+  const [resultado, setResultado] = useState(null);
 
   const calcularInfusion = () => {
-    if (!dosis || !volumen || !tiempo) return
+    if (!dosis || !volumen || !tiempo) return;
 
     // Ejemplo simple: velocidad de infusión (ml/h)
-    const velocidad = (parseFloat(volumen) / parseFloat(tiempo)) * 60
-    setResultado(velocidad.toFixed(2))
-  }
+    const velocidad = (parseFloat(volumen) / parseFloat(tiempo)) * 60;
+    setResultado(velocidad.toFixed(2));
+  };
 
   return (
     <>
@@ -64,7 +64,7 @@ const InfusionCalculator = () => {
         )}
       </div>
     </>
-  )
-}
+  );
+};
 
-export default InfusionCalculator
+export default InfusionCalculator;
