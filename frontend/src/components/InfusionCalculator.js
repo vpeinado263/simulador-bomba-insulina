@@ -10,14 +10,13 @@ const InfusionCalculator = () => {
   const calcularInfusion = () => {
     if (!dosis || !volumen || !tiempo) return;
 
-    // Ejemplo simple: velocidad de infusión (ml/h)
     const velocidad = (parseFloat(volumen) / parseFloat(tiempo)) * 60;
     setResultado(velocidad.toFixed(2));
   };
 
   return (
     <>
-      <div className="p-4 max-w-md mx-auto bg-white shadow rounded-xl">
+      <div className="p-4 max-w-md mx-auto bg-pink-100 shadow rounded-xl">
         <h2 className="text-xl font-bold mb-4">Cálculo de Infusión</h2>
 
         <div className="mb-2">
