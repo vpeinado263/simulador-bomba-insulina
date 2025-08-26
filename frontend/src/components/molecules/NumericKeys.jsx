@@ -1,4 +1,4 @@
-import ButtonNumeric from "../atoms/ButtonNumeric";
+import ButtonNumeric from "../atoms/Botones Individuales/ButtonNumeric";
 
 
 const NumericKeys = () => {
