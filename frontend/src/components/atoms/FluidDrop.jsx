@@ -1,0 +1,16 @@
+import { Droplet } from "lucide-react";
+
+const FluidDrop = ({ line, active }) => {
+  return (
+    <div className="flex items-center gap-2">
+    <Droplet
+      className={`w-6 h-6 ${
+        active ? "text-blue-500 animate-pulse" : "text-gray-400"
+      }`}
+    />
+    <span className="text-sm font-medium">{line}</span>
+  </div>
+  );
+};
+
+export default FluidDrop;
