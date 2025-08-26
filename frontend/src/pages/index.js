@@ -1,4 +1,4 @@
-import InfusionCalculator from '@/components/InfusionCalculator';
+import React from "react";
 
 export default function Home() {
 
@@ -8,7 +8,6 @@ export default function Home() {
           <h1 className="text-3xl font-bold mb-4">
             Simulador de Bomba de Insulina
           </h1>
-          <InfusionCalculator />
         </div>
     </>
   );
