@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }) {
     const timer = setTimeout(() => setLoading(false), 1500);
     return () => clearTimeout(timer);
   }, []);
-  
+
   return (
     <>
       <Head>
@@ -21,4 +21,4 @@ export default function App({ Component, pageProps }) {
       {loading ? <SpinnerInicio /> : <Component {...pageProps} />}
     </>
   );
-};
+}
