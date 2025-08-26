@@ -1,9 +1,8 @@
 
 const ChargeIndicator = () => {
   return (
-    <div className="flex items-center gap-5"><span role="img" aria-label="plug">
-      🔌
-    </span>
+    <div className="flex items-center gap-5">
+      <img src="/enchufe.svg" alt="Charge Indicator" width={140} height={96} />
     </div>
   );
 };
