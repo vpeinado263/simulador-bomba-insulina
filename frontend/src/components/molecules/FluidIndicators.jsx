@@ -1,4 +1,5 @@
-import FluidDrop from "../atoms/FluidDrop";
+import FluidDrop from "../atoms/Indicadores/FluidDrop";
+
 
 const FluidIndicators = () => {
   return (
