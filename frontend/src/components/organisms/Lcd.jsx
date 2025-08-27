@@ -4,8 +4,8 @@ import StatusRegion from "../molecules/StatusRegion"
 
 const Lcd = () => {
   return (
-    <div className="w-full h-80 bg-green-200 flex flex-col justify-between">
-      <div className="p-2  font-bold border-b border-black">
+    <div className="w-full h-70 bg-green-200 flex flex-col justify-between">
+      <div className="p-2  font-bold">
         <StatusRegion />
       </div>
       <div className="flex-1 flex flex-col justify-center items-center space-y-6">
