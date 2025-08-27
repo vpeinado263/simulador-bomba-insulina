@@ -4,19 +4,37 @@
 |   |-- package.json
 |-- frontend/
 |   |-- public/
-|   |   |-- Hoja
-|   |   |-- 1.html
+|   |   |-- batery.svg
+|   |   |-- enchufe.svg
 |   |   |-- nurshing.ico
+|   |   |-- tabla.html
 |   |-- src/
 |   |   |-- components/
 |   |   |   |-- atoms/
-|   |   |   |   |-- SpinnerInicio.js
-|   |   |   |-- InfusionCalculator.js
+|   |   |   |   |-- Botones/
+|   |   |   |   |-- Individuales/
+|   |   |   |   |-- Indicadores/
+|   |   |   |   |   |-- BatteryCapacitySymbol.jsx
+|   |   |   |   |   |-- ChargeIndicator.jsx
+|   |   |   |   |   |-- FluidDrop.jsx
+|   |   |   |   |-- SpinnerInicio.jsx
+|   |   |   |-- molecules/
+|   |   |   |   |-- FluidIndicators.jsx
+|   |   |   |   |-- MessageRegion.jsx
+|   |   |   |   |-- NumericKeys.jsx
+|   |   |   |   |-- SoftkeyLabel.jsx
+|   |   |   |   |-- StatusRegion.jsx
+|   |   |   |-- organisms/
+|   |   |   |   |-- ControlPanel.jsx
+|   |   |   |   |-- Lcd.jsx
+|   |   |   |-- templates/
+|   |   |   |   |-- DeviceLayout.jsx
 |   |   |-- pages/
-|   |   |   |-- _app.js
-|   |   |   |-- _document.js
-|   |   |   |-- index.js
+|   |   |   |-- _app.jsx
+|   |   |   |-- _document.jsx
+|   |   |   |-- index.jsx
 |   |   |-- styles/
+|   |   |   |-- globals.css
 |   |-- eslint.config.js
 |   |-- jsconfig.json
 |   |-- next.config.js
@@ -28,6 +46,7 @@
 |-- LICENSE
 |-- package.json
 |-- package-lock.json
+|-- prettier.config.json
 |-- README.md
 |-- STRUCTURE.md
 ```
