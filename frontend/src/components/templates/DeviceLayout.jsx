@@ -1,9 +1,12 @@
+import StatusRegion from "../atoms/Pantallas y regiones básicas/StatusRegion";
 
 const DeviceLayout = () => {
   return (
-    <div>
-      
+    <div className="w-[400px] h-[600px] bg-gray-200 rounded-2xl shadow-lg flex flex-col items-center p-4">
+        <StatusRegion />
+    <div className="flex-1 w-full flex items-center justify-center my-2">   
     </div>
+  </div>
   );
 };
 
