@@ -9,8 +9,8 @@ import NumericKeys from "../molecules/NumericKeys";
 const ControlPanel = () => {
   return (
     <>
-     <div className="w-full flex justify-between items-center mt-6">
-      <div className="flex flex-col gap-4">
+    <div className="w-full flex justify-between items-center mt-6">
+      <div className="flex flex-col gap-10">
         <Start />
         <Stop />
         <ChargeIndicator />
@@ -19,7 +19,7 @@ const ControlPanel = () => {
       <div className="flex justify-center">
         <NumericKeys />
       </div>
-      <div className="flex flex-col gap-4 items-center">
+      <div className="flex flex-col gap-5 items-center">
         <Select />
         <Silence />
       </div>
