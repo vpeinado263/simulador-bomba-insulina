@@ -1,15 +1,23 @@
-
 const StatusRegion = () => {
   return (
-    <div className="w-full flex justify-between items-center mb-2">
-      <div className="flex gap-2">
-        <span className="w-6 h-6 bg-gray-400 rounded">A</span> 
-        <span className="w-30 h-6 bg-gray-400 rounded">STOPED</span> 
-        <span className="w-30 h-6 bg-gray-400 rounded">STOPED</span>
-        <span className="w-6 h-6 bg-gray-400 rounded">B</span>
+    <div className="w-full">
+      <div className="flex items-center w-full">
+        <span className="flex-[1] h-6 bg-gray-400 flex items-center justify-center border border-black">
+          A
+        </span>
+        <span className="flex-[4] h-6 bg-gray-400 flex items-center justify-center border border-black">
+          STOPED
+        </span>
+        <span className="flex-[4] h-6 bg-gray-400 flex items-center justify-center border border-black">
+          STOPED
+        </span>
+        <span className="flex-[1] h-6 bg-gray-400 flex items-center justify-center border border-black">
+          B
+        </span>
       </div>
     </div>
   );
 };
 
 export default StatusRegion;
+
