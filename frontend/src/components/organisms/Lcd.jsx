@@ -1,6 +1,7 @@
 import MessageRegion from "../molecules/MessageRegion"
 import SoftkeyLabel from "../molecules/SoftkeyLabel"
 import StatusRegion from "../molecules/StatusRegion"
+import ControlPanel from "./ControlPanel"
 
 const Lcd = () => {
   return (
@@ -14,6 +15,7 @@ const Lcd = () => {
       <div>00.00</div>
       <MessageRegion />
       <SoftkeyLabel />
+      <ControlPanel />
     </div>
   )
 }
