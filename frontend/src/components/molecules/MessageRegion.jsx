@@ -2,7 +2,7 @@ import BatteryCapacitySymbol from "../atoms/Indicadores/BatteryCapacitySymbol";
 
 const MessageRegion = () => {
   return (
-  <div className="w-full h-12 bg-red-200 text-red-700 flex items-center justify-center rounded mt-4">
+  <div className="w-full h-12 bg-blue-950 flex items-center justify-center">
     <BatteryCapacitySymbol />
   </div>
   );
