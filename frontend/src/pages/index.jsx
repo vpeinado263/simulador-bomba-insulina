@@ -1,3 +1,4 @@
+import DeviceLayout from '@/components/templates/DeviceLayout';
 import React from 'react';
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
           Simulador de Bomba de Insulina
         </h1>
       </div>
+      <DeviceLayout />
     </>
   );
 }

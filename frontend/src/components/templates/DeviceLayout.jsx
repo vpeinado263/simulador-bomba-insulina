@@ -1,4 +1,5 @@
-import StatusRegion from "../atoms/Pantallas y regiones básicas/StatusRegion";
+import StatusRegion from "../organisms/StatusRegion";
+
 
 const DeviceLayout = () => {
   return (
