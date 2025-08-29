@@ -1,4 +1,5 @@
 import Softkeys from "../atoms/Botones Individuales/Softkeys";
+import ControlPanel from "../organisms/ControlPanel";
 import Lcd from "../organisms/Lcd";
 
 const DeviceLayout = () => {
@@ -9,7 +10,7 @@ const DeviceLayout = () => {
        <Softkeys />
       </div> 
     <div className="flex-1 w-full flex items-center justify-center my-2">  
-
+    <ControlPanel />
     </div>
   </div>
   );
