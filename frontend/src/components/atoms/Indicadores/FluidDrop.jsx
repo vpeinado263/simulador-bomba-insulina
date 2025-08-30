@@ -2,7 +2,7 @@ import { Droplet } from "lucide-react";
 
 const FluidDrop = ({ line, active }) => {
   return (
-    <div className="flex items-center gap-2">
+    <div>
     <Droplet
       className={`w-6 h-6 ${
         active ? "text-white animate-pulse" : "text-yellow-300"
