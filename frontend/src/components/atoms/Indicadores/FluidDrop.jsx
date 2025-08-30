@@ -5,7 +5,7 @@ const FluidDrop = ({ line, active }) => {
     <div className="flex items-center gap-2">
     <Droplet
       className={`w-6 h-6 ${
-        active ? "text-blue-500 animate-pulse" : "text-gray-400"
+        active ? "text-white animate-pulse" : "text-yellow-300"
       }`}
     />
     <span className="text-sm font-medium">{line}</span>

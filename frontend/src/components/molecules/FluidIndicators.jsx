@@ -3,9 +3,11 @@ import FluidDrop from "../atoms/Indicadores/FluidDrop";
 
 const FluidIndicators = () => {
   return (
-    <div className="flex gap-4">
-    <FluidDrop active={true} />
-    <FluidDrop active={false} />
+  <div className="flex flex-col items-center">
+    <div className="flex justify-center space-x-4">
+      <FluidDrop active={true} />
+      <FluidDrop active={true} />
+    </div>
   </div>
   );
 };
