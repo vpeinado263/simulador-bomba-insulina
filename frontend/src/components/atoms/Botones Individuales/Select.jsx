@@ -1,15 +1,13 @@
-
-
 const Select = () => {
   return (
-    <div className="flex flex-col justify-between items-center bg-gray-400 rounded-full w-16 h-60 p-2">
-      <button className="text-blue-950 font-bold text-xl">
+    <div className="flex flex-col justify-between  bg-gray-400 rounded-full text-blue-950 font-bold h-45 w-14">
+      <button>
         ▲
       </button>
-      <span className="text-blue-950 font-bold text-sm">
+      <span>
         SELECT
       </span>
-      <button className="text-blue-950 font-bold text-xl">
+      <button>
         ▼
       </button>
     </div>
