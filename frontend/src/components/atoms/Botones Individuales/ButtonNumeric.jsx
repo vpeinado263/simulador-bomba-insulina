@@ -3,7 +3,7 @@ const ButtonNumeric = ({label, onClick}) => {
   <button 
   onClick={onClick}  
   className="bg-gray-200 hover:bg-gray-300 text-blue-950 font-bold 
-  rounded-full px-5 py-3 flex items-center justify-center">
+  rounded-full  py-3 flex items-center justify-center text-lg">
     {label}
   </button>
 

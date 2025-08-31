@@ -5,14 +5,14 @@ import NumericKeys from "../molecules/NumericKeys";
 const ControlPanel = () => {
   return (
     <>
-    <div className="w-full flex justify-between items-center mt-6">
-      <div className="flex flex-col gap-6">
+    <div className="flex justify-between gap-5">
+      <div>
         <ActionButtonsUno />
       </div>
-      <div className="flex justify-center">
+      <div>
         <NumericKeys />
       </div>
-      <div className="flex flex-col gap-5 items-center">
+      <div>
         <ActionsButtonsDos />
       </div>
     </div>
