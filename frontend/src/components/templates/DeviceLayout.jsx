@@ -1,7 +1,7 @@
-import Softkeys from "../atoms/Botones Individuales/Softkeys";
 import ControlPanel from "../organisms/ControlPanel";
 import FluidIndicators from "../organisms/FluidIndicators";
 import Lcd from "../organisms/Lcd";
+import SoftkeysSelector from "../organisms/SoftkeysSelector";
 
 const DeviceLayout = () => {
   return (
@@ -13,7 +13,7 @@ const DeviceLayout = () => {
         <Lcd />
       </div>
       <div>
-        <Softkeys />
+        <SoftkeysSelector />
       </div>
       <div>
         <ControlPanel />
