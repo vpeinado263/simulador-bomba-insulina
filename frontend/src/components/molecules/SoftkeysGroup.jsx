@@ -1,10 +1,10 @@
 import SoftkeyButton from "../atoms/Botones Individuales/SoftkeyButton";
 
-const SoftkeysGroup = () => {
+const SoftkeysGroup = ({labels}) => {
   return (
-    <div className="inline-flex border-2 border-gray-500 rounded overflow-hidden">
-    {labels.map((index) => (
-      <SoftkeyButton key={index} />
+    <div>
+    {labels.map((label, index) => (
+      <SoftkeyButton key={index} label={label}/>
     ))}
   </div>
   );
