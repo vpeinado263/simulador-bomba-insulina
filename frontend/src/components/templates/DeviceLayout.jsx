@@ -1,6 +1,6 @@
 import Softkeys from "../atoms/Botones Individuales/Softkeys";
-import FluidIndicators from "../molecules/FluidIndicators";
 import ControlPanel from "../organisms/ControlPanel";
+import FluidIndicators from "../organisms/FluidIndicators";
 import Lcd from "../organisms/Lcd";
 
 const DeviceLayout = () => {
