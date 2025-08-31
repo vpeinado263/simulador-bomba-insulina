@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Bomba de Insulina</title>
+        <title>Bomba de Infusión</title>
         <link rel="icon" href="/nurshing.ico" />
       </Head>
 
