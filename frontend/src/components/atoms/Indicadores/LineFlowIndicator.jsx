@@ -5,8 +5,8 @@ const LineFlowIndicator = () => {
       <img 
       src="lineflowindicator.svg" 
       alt="Line Flow Indicator"
-      width={80}
-      height={80}
+      width={70}
+      height={70}
       />
     </div>
   );

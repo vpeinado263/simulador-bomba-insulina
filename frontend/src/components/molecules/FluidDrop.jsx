@@ -5,12 +5,11 @@ const FluidDrop = ({ line, active }) => {
     <div className="relative flex flex-col items-center">
       <LineFlowIndicator />
       <div
-        className={`absolute top-10 w-3 h-3 rounded-full ${
+        className={`absolute top-9 w-3 h-3 rounded-full ${
           active ? "bg-yellow-300 animate-pulse border-white" : "bg-green-300-300 border-gray-300"
         }`}
       ></div>
-
-      <span className="mt-2 text-sm font-medium text-white">{line}</span>
+      <span>{line}</span>
     </div>
   );
 };
