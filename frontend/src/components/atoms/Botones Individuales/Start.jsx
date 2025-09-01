@@ -1,6 +1,6 @@
 const Start = () => {
   return (
-    <button className="bg-green-700 text-blue-950 rounded-full font-bold w-20 h-10 text-lg">
+    <button className="bg-green-700 text-blue-950 rounded-full font-bold w-18 h-8 text-sm">
       START  
     </button>
   );

@@ -3,10 +3,9 @@ import Start from "../atoms/Botones Individuales/Start";
 import Stop from "../atoms/Botones Individuales/Stop";
 import ChargeIndicator from "../atoms/Indicadores/ChargeIndicator";
 
-
 const ActionButtonsUno = () => {
   return (
-    <div className="flex flex-col space-y-6">
+    <div className="flex flex-col space-y-7">
       <Start />
       <Stop />
       <ChargeIndicator />

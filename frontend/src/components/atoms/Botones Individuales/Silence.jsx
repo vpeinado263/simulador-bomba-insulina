@@ -1,7 +1,6 @@
-
 const Silence = () => {
   return (
-    <button className="bg-gray-400 text-blue-950 rounded-full font-bold w-20 h-10 text-lg">
+    <button className="bg-white text-blue-950 rounded-full font-bold w-18 h-8 text-sm">
       SILENCE  
     </button>
   );

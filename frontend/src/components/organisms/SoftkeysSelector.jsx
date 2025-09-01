@@ -9,7 +9,7 @@ const SoftkeysSelector = () => {
  ];
 
   return (
-    <div className="inline-flex gap-7">
+    <div className="inline-flex gap-8">
       {groups.map((labels, index) => (
         <SoftkeysGroup key={index} labels={labels}  />
       ))}

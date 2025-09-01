@@ -4,7 +4,7 @@ const ChargeIndicator = () => {
       <img 
       src="/enchufe.svg" 
       alt="Charge Indicator" 
-      width={70}
+      width={60}
       />
     </div>
   );
