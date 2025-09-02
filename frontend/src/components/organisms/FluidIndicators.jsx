@@ -2,7 +2,7 @@ import FluidDrop from "../molecules/FluidDrop";
 
 const FluidIndicators = () => {
   return (
-    <div className="flex space-x-55">
+    <div className="flex space-x-40">
       <FluidDrop active={true} />
       <FluidDrop active={true} />
     </div>
