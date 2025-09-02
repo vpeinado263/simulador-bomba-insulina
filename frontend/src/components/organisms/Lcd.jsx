@@ -10,12 +10,12 @@ const Lcd = () => {
       </div>
       <div className="flex-1 flex flex-col justify-center items-center space-y-6">
         <div className="flex flex-col items-center">
-          <span className="text-3xl font-extrabold text-black">125</span>
-          <span className="text-sm text-gray-800">mL/hr</span>
+          <span>Release X.XX</span>
+          <span> Copyright Abbott Laboratories 2002</span>
         </div>
         <div className="flex flex-col items-center">
-          <span className="text-2xl font-extrabold text-black">450</span>
-          <span className="text-sm text-gray-800">mL</span>
+          <span>System Self Test</span>
+          <span>In Progress</span>
         </div>
       </div>
       <div>
