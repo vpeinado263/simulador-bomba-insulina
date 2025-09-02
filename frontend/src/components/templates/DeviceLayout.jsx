@@ -5,7 +5,7 @@ import SoftkeysSelector from "../organisms/SoftkeysSelector";
 
 const DeviceLayout = () => {
   return (
-    <div className="w-[410px] h-[600px] bg-[rgb(122,77,115)] rounded-2xl flex flex-col justify-between items-center">
+    <div className="w-[370px] h-[600px] bg-[rgb(122,77,115)] rounded-2xl flex flex-col justify-between items-center">
       <div>
         <FluidIndicators />
       </div>
