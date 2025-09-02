@@ -5,7 +5,7 @@ import ChargeIndicator from "../atoms/Indicadores/ChargeIndicator";
 
 const ActionButtonsUno = () => {
   return (
-    <div className="flex flex-col space-y-7">
+    <div className="flex flex-col space-y-5">
       <Start />
       <Stop />
       <ChargeIndicator />
