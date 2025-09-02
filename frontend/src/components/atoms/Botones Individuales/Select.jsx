@@ -4,7 +4,7 @@ const Select = () => {
       <button>
         ▲
       </button>
-      <span className="flex items-center w-18 h-8 text-sm">
+      <span className="flex items-center w-16 h-5 text-sm">
         SELECT
       </span>
       <button>
