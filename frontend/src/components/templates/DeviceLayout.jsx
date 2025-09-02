@@ -11,8 +11,6 @@ const DeviceLayout = () => {
       </div>
       <div>
         <Lcd />
-      </div>
-      <div>
         <SoftkeysSelector />
       </div>
       <div>
