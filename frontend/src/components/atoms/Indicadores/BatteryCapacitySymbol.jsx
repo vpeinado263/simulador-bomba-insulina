@@ -1,9 +1,7 @@
 const BatteryCapacitySymbol = () => {
     return (
-      <div className="flex items-center gap-2">
-        <div className="flex items-center gap-5">
-        <img src="/batery.svg" alt="Charge Indicator" width={30}/>
-      </div>
+      <div>
+        <img src="/batery.svg" alt="Charge Indicator" width={33} height={40}/>
       </div>
     );
   };
