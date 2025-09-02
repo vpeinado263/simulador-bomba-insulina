@@ -1,6 +1,6 @@
 const Select = () => {
   return (
-    <div className="flex flex-col justify-between   bg-white rounded-full text-blue-950 font-bold h-40 w-12">
+    <div className="flex flex-col justify-between bg-white  hover:bg-gray-300 rounded-full text-blue-950 font-bold h-40 w-12">
       <button>
         ▲
       </button>
