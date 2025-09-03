@@ -9,7 +9,7 @@ export const DeviceProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
 
 const togglePower = () => {
-  if (!OsOn) {
+  if (!isOn) {
     setLoading(true);
     setTimeout(() => {
       setIsOn(true);
