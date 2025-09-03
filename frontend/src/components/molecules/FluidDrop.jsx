@@ -6,7 +6,9 @@ const FluidDrop = ({ line, active }) => {
       <LineFlowIndicator />
       <div
         className={`absolute top-8 w-2 h-2 rounded-full ${
-          active ? "bg-yellow-300 animate-pulse border-white" : "bg-green-300-300 border-gray-300"
+          active
+            ? "bg-yellow-300 animate-pulse border-white"
+            : "bg-green-300-300 border-gray-300"
         }`}
       ></div>
       <span>{line}</span>
@@ -15,4 +17,3 @@ const FluidDrop = ({ line, active }) => {
 };
 
 export default FluidDrop;
-

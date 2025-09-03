@@ -11,4 +11,3 @@ const StatusRegion = () => {
 };
 
 export default StatusRegion;
-
