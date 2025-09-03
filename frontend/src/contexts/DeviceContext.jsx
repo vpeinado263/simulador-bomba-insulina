@@ -1,29 +1,28 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState} from "react";
 
 const DeviceContext = createContext();
 
 export const useDevice = () => useContext(DeviceContext);
 
 export const DeviceProvider = ({ children }) => {
-  const [isOn, setIsOn] = useState(false);
-  const [loading, setLoading] = useState(false);
+  const [step, setStep] = useState(0);
 
   const togglePower = () => {
-    if (!isOn) {
-      setLoading(true);
+    if (step === 0) {
+      setStep(1);
       setTimeout(() => {
-        setIsOn(true);
-        setLoading(false);
+        setStep(2);
       }, 3000);
     } else {
-      setIsOn(false);
-      setLoading(false);
+      setStep(0);
     }
   };
 
   return (
-    <DeviceContext.Provider value={{ isOn, loading, togglePower }}>
+    <DeviceContext.Provider value={{ step, setStep, togglePower }}>
       {children}
     </DeviceContext.Provider>
   );
 };
+
+export default DeviceContext;
