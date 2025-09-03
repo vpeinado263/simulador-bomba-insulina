@@ -14,18 +14,19 @@
 |   |   |-- components/
 |   |   |   |-- atoms/
 |   |   |   |   |-- Botones/
-|   |   |   |   |-- Individuales/
-|   |   |   |   |   |-- ButtonNumeric.jsx
-|   |   |   |   |   |-- OnOff.jsx
-|   |   |   |   |   |-- Select.jsx
-|   |   |   |   |   |-- Silence.jsx
-|   |   |   |   |   |-- Softkeys.jsx
-|   |   |   |   |   |-- Start.jsx
-|   |   |   |   |   |-- Stop.jsx
-|   |   |   |   |-- Indicadores/
-|   |   |   |   |   |-- BatteryCapacitySymbol.jsx
-|   |   |   |   |   |-- ChargeIndicator.jsx
-|   |   |   |   |   |-- LineFlowIndicator.jsx
+|   |   |   |   |   |-- Individuales/
+|   |   |   |   |   |   |-- ButtonNumeric.jsx
+|   |   |   |   |   |   |-- OnOff.jsx
+|   |   |   |   |   |   |-- Select.jsx
+|   |   |   |   |   |   |-- Silence.jsx
+|   |   |   |   |   |   |-- Softkeys.jsx
+|   |   |   |   |   |   |-- Start.jsx
+|   |   |   |   |   |   |-- Stop.jsx
+|   |   |   |   |   |-- Indicadores/
+|   |   |   |   |   |   |-- BatteryCapacitySymbol.jsx
+|   |   |   |   |   |   |-- ChargeIndicator.jsx
+|   |   |   |   |   |   |-- LineFlowIndicator.jsx
+|   |   |   |   |   |   |-- StartMessage.jsx
 |   |   |   |   |-- SpinnerInicio.jsx
 |   |   |   |-- molecules/
 |   |   |   |   |-- ActionButtonsUno.jsx
@@ -37,12 +38,16 @@
 |   |   |   |   |-- SoftkeysGroup.jsx
 |   |   |   |   |-- StatusRegion.jsx
 |   |   |   |-- organisms/
+|   |   |   |   |-- screens/
+|   |   |   |   |   |-- StartupScreen.jsx
 |   |   |   |   |-- ControlPanel.jsx
 |   |   |   |   |-- FluidIndicators.jsx
 |   |   |   |   |-- Lcd.jsx
 |   |   |   |   |-- SoftkeysSelector.jsx
 |   |   |   |-- templates/
 |   |   |   |   |-- DeviceLayout.jsx
+|   |   |-- contexts/
+|   |   |   |-- DeviceContext.jsx
 |   |   |-- pages/
 |   |   |   |-- _app.jsx
 |   |   |   |-- _document.jsx
