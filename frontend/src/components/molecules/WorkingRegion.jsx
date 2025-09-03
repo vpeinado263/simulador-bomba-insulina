@@ -1,5 +1,5 @@
 
-const WorkingRegion = () => {
+const WorkingRegion = ({text1, text2}) => {
   return (
     <div>
         <div className="flex-1 flex flex-col justify-center items-center text-sm">
@@ -9,15 +9,10 @@ const WorkingRegion = () => {
           </div>
           <div className="flex flex-col items-center mb-8">
             <span></span>
-            <span></span>
           </div>
-          <div className="flex flex-col items-center mb-9">
-            <span></span>
-            <span></span>
-          </div>
-          <div className="flex flex-col items-center mb-9">
-            <span></span>
-            <span></span>
+          <div className="flex flex-col items-center mb-8">
+            <span>{text1}</span>
+            <span>{text2}</span>
           </div>
         </div>
     </div>

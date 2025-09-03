@@ -1,9 +1,9 @@
 import BatteryCapacitySymbol from "../atoms/Indicadores/BatteryCapacitySymbol";
 
-const MessageRegion = () => {
+const MessageRegion = ({ showBattery = true }) => {
   return (
     <div className="h-7 bg-black">
-      <BatteryCapacitySymbol />
+      {showBattery && <BatteryCapacitySymbol />}
     </div>
   );
 };
