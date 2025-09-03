@@ -3,26 +3,22 @@ const WorkingRegion = () => {
   return (
     <div>
         <div className="flex-1 flex flex-col justify-center items-center text-sm">
-            <div className="flex flex-col items-center mb-2">
-            <span>00.00</span>
-            <span>00.00</span>
+          <div className="flex flex-col items-center mb-10">
+            <span></span>
+            <span></span>
           </div>
-          <div className="flex flex-col items-center font-bold">
-            <span>casa</span>
-            <span>casa</span>
+          <div className="flex flex-col items-center mb-8">
+            <span></span>
+            <span></span>
           </div>
-          <div>
-            <span>casa</span>
-            <span>casa</span>
-        </div>
-        <div>
-            <span>casa</span>
-            <span>casa</span>
-        </div>
-        <div>
-            <span>casa</span>
-            <span>casa</span>
-        </div>
+          <div className="flex flex-col items-center mb-9">
+            <span></span>
+            <span></span>
+          </div>
+          <div className="flex flex-col items-center mb-9">
+            <span></span>
+            <span></span>
+          </div>
         </div>
     </div>
   );
