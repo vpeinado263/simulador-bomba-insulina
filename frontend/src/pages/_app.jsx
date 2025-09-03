@@ -2,6 +2,7 @@ import Head from 'next/head';
 import '../styles/globals.css';
 import { useState, useEffect } from 'react';
 import SpinnerInicio from '@/components/atoms/SpinnerInicio';
+import { DeviceProvider } from '@/contexts/DeviceContext';
 
 export default function App({ Component, pageProps }) {
   const [loading, setLoading] = useState(true);
@@ -18,7 +19,13 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" href="/nurshing.ico" />
       </Head>
 
-      {loading ? <SpinnerInicio /> : <Component {...pageProps} />}
+      {loading ? <SpinnerInicio /> : 
+      
+      <DeviceProvider>
+        <Component {...pageProps} />
+      </DeviceProvider>
+      
+      }
     </>
   );
 }
