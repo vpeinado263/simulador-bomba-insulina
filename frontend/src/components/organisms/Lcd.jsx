@@ -2,6 +2,7 @@ import { useDevice } from "@/contexts/DeviceContext";
 import MessageRegion from "../molecules/MessageRegion";
 import SoftkeyLabel from "../molecules/SoftkeyLabel";
 import StatusRegion from "../molecules/StatusRegion";
+import WorkingRegion from "../molecules/WorkingRegion";
 import StartupScreen from "./screens/StartupScreen";
 
 const Lcd = () => {
@@ -11,27 +12,21 @@ const Lcd = () => {
   }
 
   if (loading) {
-    return <StartupScreen />;
+    return (
+    <StartupScreen />
+    );
   }
 
-  //Estado encendido
+  //Estado encendido 
   if (isOn && !loading) {
     return (
       <div className="w-64 h-60 bg-green-200 flex flex-col justify-between rounded-md">
         <div>
           <StatusRegion />
         </div>
-        <div className="flex-1 flex flex-col justify-center items-center text-sm">
-          <div className="flex flex-col items-center mb-2">
-            <span></span>
-            <span></span>
-          </div>
-          <div className="flex flex-col items-center font-bold">
-            <span></span>
-            <span></span>
-          </div>
+        <div>
+          <WorkingRegion />
         </div>
-        <div></div>
         <div>
           <MessageRegion />
         </div>
