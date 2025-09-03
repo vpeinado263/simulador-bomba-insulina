@@ -1,7 +1,7 @@
 const Close = () => {
   return (
     <div>
-        <button>Closer Lever</button>  
+        <button>Close Lever</button>  
     </div>
   );
 };
