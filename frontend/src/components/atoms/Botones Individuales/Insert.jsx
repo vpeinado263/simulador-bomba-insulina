@@ -1,7 +1,7 @@
 import { useDevice } from "@/contexts/DeviceContext";
 
 const Insert = () => {
-  const { setInserted } = useDevice
+  const { setInserted } = useDevice();
   return (
     <button 
     onClick={() => setInserted(true)}
