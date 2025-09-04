@@ -20,8 +20,8 @@ const Lcd = () => {
            <StartupScreen />
         </div>
       );
+      
     }
-
     case 1: 
     return (
       <div className="w-64 h-60 bg-green-200 flex flex-col justify-between rounded-md">
@@ -59,10 +59,8 @@ const Lcd = () => {
         </div>
       );
     }
-  
-    return null;
   }
- 
+  return null;
 };
 
 export default Lcd;
