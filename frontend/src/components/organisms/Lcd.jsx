@@ -1,4 +1,5 @@
 import { useDevice } from "@/contexts/DeviceContext";
+import ScreenLayout from "../atoms/Layout/ScreenLayout";
 import MessageRegion from "../molecules/MessageRegion";
 import SoftkeyLabel from "../molecules/SoftkeyLabel";
 import StatusRegion from "../molecules/StatusRegion";
@@ -24,8 +25,8 @@ const Lcd = () => {
     }
     case 1: 
     return (
-      <div className="w-64 h-60 bg-green-200 flex flex-col justify-between rounded-md">
-        <div>
+      <ScreenLayout>
+          <div>
           <StatusRegion text="SETUP" />
         </div>
         <div>
@@ -37,13 +38,13 @@ const Lcd = () => {
         <div>
           <SoftkeyLabel />
         </div>
-      </div>
+      </ScreenLayout>
     );
     //Estado encendido 
     case 2:
     if (isOn && !loading) {
       return (
-        <div className="w-64 h-60 bg-green-200 flex flex-col justify-between rounded-md">
+        <ScreenLayout>
           <div>
             <StatusRegion />
           </div>
@@ -56,7 +57,7 @@ const Lcd = () => {
           <div>
             <SoftkeyLabel />
           </div>
-        </div>
+        </ScreenLayout>
       );
     }
   }
