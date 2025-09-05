@@ -1,5 +1,6 @@
 import { useDevice } from "@/contexts/DeviceContext";
 import ScreenLayout from "../atoms/Layout/ScreenLayout";
+import StatusAB from "../atoms/StatusRegion/StatusAB";
 import MessageRegion from "../molecules/MessageRegion";
 import SoftkeyLabel from "../molecules/SoftkeyLabel";
 import StatusRegion from "../molecules/StatusRegion";
@@ -40,7 +41,7 @@ const Lcd = () => {
     case 5:
       return (
         <ScreenLayout>
-          <StatusRegion text="|A| STOPPED | STOPPED |B|" />
+          <StatusAB />
           <WorkingRegion text1="0 ml/hr" text2="0 Vol inf. ml" />
           <MessageRegion />
           <SoftkeyLabel text1="Black Prime" text2="A" text3="B" text4="Options/Vol Inf" />
