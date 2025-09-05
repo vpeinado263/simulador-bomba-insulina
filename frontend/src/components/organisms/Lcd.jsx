@@ -1,9 +1,9 @@
 import { useDevice } from "@/contexts/DeviceContext";
 import ScreenLayout from "../atoms/Layout/ScreenLayout";
 import StatusAB from "../atoms/StatusRegion/StatusAB";
+import StatusSetup from "../atoms/StatusRegion/StatusSetup";
 import MessageRegion from "../molecules/MessageRegion";
 import SoftkeyLabel from "../molecules/SoftkeyLabel";
-import StatusRegion from "../molecules/StatusRegion";
 import WorkingRegion from "../molecules/WorkingRegion";
 import StartupScreen from "./screens/StartupScreen";
 
@@ -14,11 +14,10 @@ const Lcd = () => {
     case 0:
     if (!isOn && !loading) return <div className="bg-black w-64 h-60 rounded-md" />;
     if (loading) return <StartupScreen />;
-     // fallthrough intencional al case 1
     case 1:
       return (
         <ScreenLayout>
-          <StatusRegion text="SETUP" />
+          <StatusSetup />
           <WorkingRegion text1="Insert PLUM Set" text2="Close Lever" />
           <MessageRegion />
           <SoftkeyLabel />
@@ -30,7 +29,7 @@ const Lcd = () => {
       
         return (
           <ScreenLayout>
-            <StatusRegion text="SETUP" />
+            <StatusSetup />
             <WorkingRegion text1={workingText1} text2={workingText2} />
             <MessageRegion />
             <SoftkeyLabel />
