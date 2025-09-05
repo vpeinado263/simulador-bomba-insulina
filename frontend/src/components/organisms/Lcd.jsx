@@ -1,9 +1,8 @@
 import { useDevice } from "@/contexts/DeviceContext";
 import ScreenLayout from "../atoms/Layout/ScreenLayout";
-import StatusAB from "../atoms/StatusRegion/StatusAB";
-import StatusSetup from "../atoms/StatusRegion/StatusSetup";
 import MessageRegion from "../molecules/MessageRegion";
 import SoftkeyLabel from "../molecules/SoftkeyLabel";
+import StatusRegion from "../molecules/StatusRegion";
 import WorkingRegion from "../molecules/WorkingRegion";
 import StartupScreen from "./screens/StartupScreen";
 
@@ -17,7 +16,7 @@ const Lcd = () => {
     case 1:
       return (
         <ScreenLayout>
-          <StatusSetup />
+          <StatusRegion variant="setup" />
           <WorkingRegion text1="Insert PLUM Set" text2="Close Lever" />
           <MessageRegion />
           <SoftkeyLabel />
@@ -29,7 +28,7 @@ const Lcd = () => {
       
         return (
           <ScreenLayout>
-            <StatusSetup />
+            <StatusRegion variant="setup" />
             <WorkingRegion text1={workingText1} text2={workingText2} />
             <MessageRegion />
             <SoftkeyLabel />
@@ -40,7 +39,7 @@ const Lcd = () => {
     case 5:
       return (
         <ScreenLayout>
-          <StatusAB />
+          <StatusRegion variant="ab" />
           <WorkingRegion text1="0 ml/hr" text2="0 Vol inf. ml" />
           <MessageRegion />
           <SoftkeyLabel text1="Black Prime" text2="A" text3="B" text4="Options/Vol Inf" />
