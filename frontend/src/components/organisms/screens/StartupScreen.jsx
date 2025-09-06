@@ -1,8 +1,8 @@
 import { useDevice } from "@/contexts/DeviceContext";
-import StartMessage from "@/components/atoms/Indicadores/StartMessage";
 import MessageRegion from "@/components/molecules/MessageRegion";
 import SoftkeyLabel from "@/components/molecules/SoftkeyLabel";
 import StatusRegion from "@/components/molecules/StatusRegion";
+import WorkingRegion from "@/components/molecules/WorkingRegion";
 
 const StartupScreen = () => {
   const { step } = useDevice();
@@ -12,7 +12,7 @@ const StartupScreen = () => {
       <div>
         <StatusRegion variant="hospira"/>
       </div>
-      <StartMessage />
+      <WorkingRegion variant="loading"/>
       <div>
         <MessageRegion showBattery={step !== 0}/>
       </div>

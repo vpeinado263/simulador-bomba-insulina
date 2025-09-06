@@ -1,22 +1,18 @@
+import { useDevice } from "@/contexts/DeviceContext";
+import InsertStep from "@/atoms/WorkingRegion/InsertStep";
+import CloseStep from "@/atoms/WorkingRegion/CloseStep";
+import InfusingStep from "@/atoms/WorkingRegion/InfusingStep";
+import LoadingStep from "@/atoms/WorkingRegion/LoadingStep";
 
-const WorkingRegion = ({text1, text2}) => {
-  return (
-    <div>
-        <div className="flex-1 flex flex-col justify-center items-center text-sm">
-          <div className="flex flex-col items-center mb-10">
-            <span></span>
-            <span></span>
-          </div>
-          <div className="flex flex-col items-center mb-8">
-            <span></span>
-          </div>
-          <div className="flex flex-col items-center mb-8">
-            <span>{text1}</span>
-            <span>{text2}</span>
-          </div>
-        </div>
-    </div>
-  );
+const WorkingRegion = () => {
+  const { step, inserted, closed, loading } = useDevice();
+
+  if (loading) return <LoadingStep />;
+  if (step === 0 && !inserted) return <InsertStep />;
+  if (step === 1 && inserted && !closed) return <CloseStep />;
+  if (step === 2 && inserted && closed) return <InfusingStep />;
+
+  return null;
 };
 
 export default WorkingRegion;
