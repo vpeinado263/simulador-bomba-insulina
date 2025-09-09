@@ -52,12 +52,11 @@
 |   |   |   |   |-- StatusRegion.jsx
 |   |   |   |   |-- WorkingRegion.jsx
 |   |   |   |-- organisms/
-|   |   |   |   |-- screens/
-|   |   |   |   |   |-- StartupScreen.jsx
 |   |   |   |   |-- ControlPanel.jsx
 |   |   |   |   |-- FluidIndicators.jsx
 |   |   |   |   |-- Lcd.jsx
 |   |   |   |   |-- SoftkeysSelector.jsx
+|   |   |   |   |-- StartupScreen.jsx
 |   |   |   |-- templates/
 |   |   |   |   |-- DeviceLayout.jsx
 |   |   |-- contexts/
