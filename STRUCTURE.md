@@ -16,6 +16,8 @@
 |   |   |   |   |-- Botones/
 |   |   |   |   |   |-- Individuales/
 |   |   |   |   |   |   |-- ButtonNumeric.jsx
+|   |   |   |   |   |   |-- Close.jsx
+|   |   |   |   |   |   |-- Insert.jsx
 |   |   |   |   |   |   |-- OnOff.jsx
 |   |   |   |   |   |   |-- Select.jsx
 |   |   |   |   |   |   |-- Silence.jsx
@@ -26,17 +28,29 @@
 |   |   |   |   |   |   |-- BatteryCapacitySymbol.jsx
 |   |   |   |   |   |   |-- ChargeIndicator.jsx
 |   |   |   |   |   |   |-- LineFlowIndicator.jsx
-|   |   |   |   |   |   |-- StartMessage.jsx
+|   |   |   |   |   |-- Layout/
+|   |   |   |   |   |   |-- ScreenLayout.jsx
+|   |   |   |   |   |-- StatusRegion/
+|   |   |   |   |   |   |-- StatusAB.jsx
+|   |   |   |   |   |   |-- StatusHospira.jsx
+|   |   |   |   |   |   |-- StatusSetup.jsx
+|   |   |   |   |   |-- WorkingRegion/
+|   |   |   |   |   |   |-- CloseStep.jsx
+|   |   |   |   |   |   |-- IfusingStep.jsx
+|   |   |   |   |   |   |-- InsertStep.jsx
+|   |   |   |   |   |   |-- LoadingStep.jsx
 |   |   |   |   |-- SpinnerInicio.jsx
 |   |   |   |-- molecules/
 |   |   |   |   |-- ActionButtonsUno.jsx
 |   |   |   |   |-- ActionsButtonsDos.jsx
+|   |   |   |   |-- ControlSet.jsx
 |   |   |   |   |-- FluidDrop.jsx
 |   |   |   |   |-- MessageRegion.jsx
 |   |   |   |   |-- NumericKeys.jsx
 |   |   |   |   |-- SoftkeyLabel.jsx
 |   |   |   |   |-- SoftkeysGroup.jsx
 |   |   |   |   |-- StatusRegion.jsx
+|   |   |   |   |-- WorkingRegion.jsx
 |   |   |   |-- organisms/
 |   |   |   |   |-- screens/
 |   |   |   |   |   |-- StartupScreen.jsx
