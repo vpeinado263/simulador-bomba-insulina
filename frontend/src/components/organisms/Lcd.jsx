@@ -6,37 +6,37 @@ import StatusRegion from "../molecules/StatusRegion";
 import WorkingRegion from "../molecules/WorkingRegion";
 import StartupScreen from "./screens/StartupScreen";
 
+
 const Lcd = () => {
-  const { step, isOn, loading, inserted, closed } = useDevice();
+  const { step, isOn, loading } = useDevice();
 
   switch (step) {
     case 0:
-    if (!isOn && !loading) return <div className="bg-black w-64 h-60 rounded-md" />;
-    if (loading) return <StartupScreen />;
-    case 1:
+      if (!isOn && !loading) return <div className="bg-black w-64 h-60 rounded-md" />;
+      if (loading) return <StartupScreen />;
+      break;
+
+    case 1: 
       return (
         <ScreenLayout>
           <StatusRegion variant="setup" />
-          <WorkingRegion text1="Insert PLUM Set" text2="Close Lever" />
+          <WorkingRegion />  
           <MessageRegion />
           <SoftkeyLabel />
         </ScreenLayout>
       );
-      case 2: {
-        const workingText1 = inserted && closed ? "Mechanism Initialization" : "Insert PLUM Set";
-        const workingText2 = inserted && closed ? "In Progress..." : "Close Lever";
-      
-        return (
-          <ScreenLayout>
-            <StatusRegion variant="setup" />
-            <WorkingRegion text1={workingText1} text2={workingText2} />
-            <MessageRegion />
-            <SoftkeyLabel />
-          </ScreenLayout>
-        );
-      }
-      
-    case 5:
+
+    case 2: 
+      return (
+        <ScreenLayout>
+          <StatusRegion variant="setup" />
+          <WorkingRegion /> 
+          <MessageRegion />
+          <SoftkeyLabel />
+        </ScreenLayout>
+      );
+
+    case 5: 
       return (
         <ScreenLayout>
           <StatusRegion variant="ab" />
@@ -52,4 +52,3 @@ const Lcd = () => {
 };
 
 export default Lcd;
-
