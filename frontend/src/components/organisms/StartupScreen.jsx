@@ -1,8 +1,7 @@
 import { useDevice } from "@/contexts/DeviceContext";
-import MessageRegion from "@/components/molecules/MessageRegion";
-import SoftkeyLabel from "@/components/molecules/SoftkeyLabel";
-import StatusRegion from "@/components/molecules/StatusRegion";
-import WorkingRegion from "@/components/molecules/WorkingRegion";
+import MessageRegion from "../molecules/MessageRegion";
+import SoftkeyLabel from "../molecules/SoftkeyLabel";
+import StatusRegion from "../molecules/StatusRegion";
 
 const StartupScreen = () => {
   const { step } = useDevice();

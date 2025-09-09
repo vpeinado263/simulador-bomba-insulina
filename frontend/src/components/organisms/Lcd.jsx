@@ -4,8 +4,7 @@ import MessageRegion from "../molecules/MessageRegion";
 import SoftkeyLabel from "../molecules/SoftkeyLabel";
 import StatusRegion from "../molecules/StatusRegion";
 import WorkingRegion from "../molecules/WorkingRegion";
-import StartupScreen from "./screens/StartupScreen";
-
+import StartupScreen from "../organisms/StartupScreen";
 
 const Lcd = () => {
   const { step, isOn, loading } = useDevice();
