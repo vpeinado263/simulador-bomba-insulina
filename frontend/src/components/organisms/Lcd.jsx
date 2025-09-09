@@ -29,9 +29,9 @@ const Lcd = () => {
       return (
         <ScreenLayout>
           <StatusRegion variant="ab" />
-          <WorkingRegion text1="0 ml/hr" text2="0 Vol inf. ml" />
+          <WorkingRegion variant="infusing"/>
           <MessageRegion />
-          <SoftkeyLabel text1="Black Prime" text2="A" text3="B" text4="Options/Vol Inf" />
+          <SoftkeyLabel />
         </ScreenLayout>
       );
 
