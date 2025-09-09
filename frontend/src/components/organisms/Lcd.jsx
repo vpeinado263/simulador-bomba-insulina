@@ -12,30 +12,20 @@ const Lcd = () => {
 
   switch (step) {
     case 0:
-      if (!isOn && !loading) return <div className="bg-black w-64 h-60 rounded-md" />;
-      if (loading) return <StartupScreen />;
-      break;
+    return !isOn && !loading
+    ? <div className="bg-black w-64 h-60 rounded-md" />
+    : <StartupScreen />;
 
-    case 1: 
-      return (
-        <ScreenLayout>
-          <StatusRegion variant="setup" />
-          <WorkingRegion />  
-          <MessageRegion />
-          <SoftkeyLabel />
-        </ScreenLayout>
-      );
-
-    case 2: 
-      return (
-        <ScreenLayout>
-          <StatusRegion variant="setup" />
-          <WorkingRegion /> 
-          <MessageRegion />
-          <SoftkeyLabel />
-        </ScreenLayout>
-      );
-
+    case 1:
+    case 2:
+    return (
+    <ScreenLayout>
+      <StatusRegion variant="setup" />
+      <WorkingRegion />
+      <MessageRegion />
+      <SoftkeyLabel />
+    </ScreenLayout>
+    );
     case 5: 
       return (
         <ScreenLayout>
