@@ -1,20 +1,26 @@
 import InsertStep from "../atoms/WorkingRegion/InsertStep";
-import Loadingstep from "../atoms/WorkingRegion/LoadingStep";
+import LoadingStep from "../atoms/WorkingRegion/LoadingStep";
 import CloseStep from "../atoms/WorkingRegion/CloseStep";
 import InfusingStep from "../atoms/WorkingRegion/InfusingStep";
 import { useDevice } from "@/contexts/DeviceContext";
 
 const WorkingRegion = () => {
   const { step, inserted, closed, loading } = useDevice();
+  
+  let variant;
+  if (loading) variant = "loading";
+  else if ((step === 1 || step === 2) && !inserted) variant = "insert";
+  else if ((step === 1 || step === 2) && inserted && !closed) variant = "close";
+  else if ((step === 1 || step === 2) && inserted && closed) variant = "infusing";
 
-  if (loading) return <Loadingstep />;
-  if (step === 1 || step === 2) {
-    if (!inserted) return <InsertStep />;
-    if (inserted && !closed) return <CloseStep />;
-    if (inserted && closed) return <InfusingStep />;
-  }
+  const variants = {
+    loading: <LoadingStep />,
+    insert: <InsertStep />,
+    close: <CloseStep />,
+    infusing: <InfusingStep />,
+  };
 
-  return null;
+  return variant ? variants[variant] : null;
 };
 
 export default WorkingRegion;
