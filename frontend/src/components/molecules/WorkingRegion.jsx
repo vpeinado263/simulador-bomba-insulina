@@ -1,6 +1,8 @@
-const { default: InfusingStep } = require("../atoms/WorkingRegion/InfusingStep");
-const { default: InsertStep } = require("../atoms/WorkingRegion/InsertStep");
-const { default: Loadingstep } = require("../atoms/WorkingRegion/LoadingStep");
+import InsertStep from "../atoms/WorkingRegion/InsertStep";
+import Loadingstep from "../atoms/WorkingRegion/LoadingStep";
+import CloseStep from "../atoms/WorkingRegion/CloseStep";
+import InfusingStep from "../atoms/WorkingRegion/InfusingStep";
+import { useDevice } from "@/contexts/DeviceContext";
 
 const WorkingRegion = () => {
   const { step, inserted, closed, loading } = useDevice();
@@ -14,3 +16,5 @@ const WorkingRegion = () => {
 
   return null;
 };
+
+export default WorkingRegion;
