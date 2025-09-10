@@ -20,10 +20,10 @@ const StatusRegion = ({ variant }) => {
         case "ab":
           return (
             <StatusRow>
-              <StatusLabel>A</StatusLabel>
-              <StatusLabel>STOPPED</StatusLabel>
-              <StatusLabel>STOPPED</StatusLabel>
-              <StatusLabel>B</StatusLabel>
+              <StatusLabel flex={1}>A</StatusLabel>
+              <StatusLabel flex={3}>STOPPED</StatusLabel>
+              <StatusLabel flex={3}>STOPPED</StatusLabel>
+              <StatusLabel flex={1}>B</StatusLabel>
             </StatusRow>
           );
     };
