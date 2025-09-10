@@ -1,5 +1,5 @@
-const StatusLabel = ({children}) => (
-    <div className="flex-1 text-center font-bold border px-2 py-1">
+const StatusLabel = ({ children, flex = 1, bg = "bg-gren-300"}) => (
+    <div className={`${bg} flex justtify-center items-center border border-green-600 text-black text-xs h-8 flex-${flex}`}>
       {children}
     </div>
 );
