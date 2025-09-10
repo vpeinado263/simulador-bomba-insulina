@@ -1,4 +1,4 @@
-import StatusAB from "../atoms/StatusRegion/StatusAB";
+
 
 import StatusLabel from "../atoms/StatusRegion/StatusLabel";
 import StatusRow from "../atoms/StatusRegion/StatusRow";
@@ -18,7 +18,14 @@ const StatusRegion = ({ variant }) => {
           </StatusRow>
           );
         case "ab":
-          return <StatusAB />;
+          return (
+            <StatusRow>
+              <StatusLabel>A</StatusLabel>
+              <StatusLabel>STOPPED</StatusLabel>
+              <StatusLabel>STOPPED</StatusLabel>
+              <StatusLabel>B</StatusLabel>
+            </StatusRow>
+          );
     };
 };
 
