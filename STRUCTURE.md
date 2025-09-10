@@ -28,8 +28,6 @@
 |   |   |   |   |   |   |-- BatteryCapacitySymbol.jsx
 |   |   |   |   |   |   |-- ChargeIndicator.jsx
 |   |   |   |   |   |   |-- LineFlowIndicator.jsx
-|   |   |   |   |   |-- Layout/
-|   |   |   |   |   |   |-- ScreenLayout.jsx
 |   |   |   |   |   |-- StatusRegion/
 |   |   |   |   |   |   |-- StatusAB.jsx
 |   |   |   |   |   |   |-- StatusHospira.jsx
@@ -40,6 +38,8 @@
 |   |   |   |   |   |   |-- InsertStep.jsx
 |   |   |   |   |   |   |-- LoadingStep.jsx
 |   |   |   |   |-- SpinnerInicio.jsx
+|   |   |   |-- Layout/
+|   |   |   |   |-- ScreenLayout.jsx
 |   |   |   |-- molecules/
 |   |   |   |   |-- ActionButtonsUno.jsx
 |   |   |   |   |-- ActionsButtonsDos.jsx
