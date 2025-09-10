@@ -1,5 +1,5 @@
 import { useDevice } from "@/contexts/DeviceContext";
-import ScreenLayout from "../atoms/Layout/ScreenLayout";
+import ScreenLayout from "../Layouts/ScreenLayout";
 import MessageRegion from "../molecules/MessageRegion";
 import SoftkeyLabel from "../molecules/SoftkeyLabel";
 import StatusRegion from "../molecules/StatusRegion";
