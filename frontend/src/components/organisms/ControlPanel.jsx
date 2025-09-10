@@ -3,6 +3,10 @@ import ActionsButtonsDos from "../molecules/ActionsButtonsDos";
 import NumericKeys from "../molecules/NumericKeys";
 
 const ControlPanel = () => {
+  const handleKeyPress = (key) => {
+    console.log("Tecla:", key);
+  };
+
   return (
     <>
       <div className="flex justify-between gap-5">
@@ -10,7 +14,7 @@ const ControlPanel = () => {
           <ActionButtonsUno />
         </div>
         <div>
-          <NumericKeys />
+          <NumericKeys onKeyPress={handleKeyPress} />
         </div>
         <div>
           <ActionsButtonsDos />
