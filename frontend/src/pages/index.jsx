@@ -1,3 +1,4 @@
+import Footer from "@/components/organisms/Footer";
 import DeviceLayout from "@/components/templates/DeviceLayout";
 import { DeviceProvider } from "@/contexts/DeviceContext";
 import React from "react";
@@ -10,6 +11,7 @@ export default function Home() {
          <DeviceLayout />
        </div>
      </DeviceProvider>
+     <Footer />
     </>
   );
 }
