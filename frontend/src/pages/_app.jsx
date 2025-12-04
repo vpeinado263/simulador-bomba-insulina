@@ -1,9 +1,11 @@
 import Head from "next/head";
 import "../styles/globals.css";
 import { useState, useEffect } from "react";
+
 import SpinnerInicio from "@/components/atoms/SpinnerInicio";
 import { DeviceProvider } from "@/contexts/DeviceContext";
 import Seo from "@/components/seo/Seo";
+import AppLayout from "@/components/templates/AppLayout";
 
 export default function App({ Component, pageProps }) {
   const [loading, setLoading] = useState(true);
@@ -22,13 +24,15 @@ export default function App({ Component, pageProps }) {
 
       <Seo />
 
-      {loading ? (
-        <SpinnerInicio />
-      ) : (
-        <DeviceProvider>
-          <Component {...pageProps} />
-        </DeviceProvider>
-      )}
+      <DeviceProvider>
+        <AppLayout>
+          {loading ? (
+            <SpinnerInicio />
+          ) : (
+            <Component {...pageProps} />
+          )}
+        </AppLayout>
+      </DeviceProvider>
     </>
   );
 }
