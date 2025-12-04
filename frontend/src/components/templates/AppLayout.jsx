@@ -1,13 +1,15 @@
+import { DeviceProvider } from "@/contexts/DeviceContext";
 import Footer from "../organisms/Footer";
+import DeviceLayout from "./DeviceLayout";
 
 const AppLayout = () => {
   return (
-    <div className="min-h-screen flex flex-col">
-      <main className="flex-1 flex justify-center items-center">
-        {children}
-      </main>
+    <DeviceProvider>
+    <div className="min-h-screen flex flex-col items-center justify-center">
+      <DeviceLayout />
       <Footer />
     </div>
+  </DeviceProvider>
   )
 }
 

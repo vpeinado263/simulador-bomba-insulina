@@ -1,17 +1,7 @@
-import Footer from "@/components/organisms/Footer";
-import DeviceLayout from "@/components/templates/DeviceLayout";
-import { DeviceProvider } from "@/contexts/DeviceContext";
-import React from "react";
+import AppLayout from "@/components/templates/AppLayout";
 
 export default function Home() {
   return (
-    <>
-     <DeviceProvider>
-       <div className="min-h-screen flex flex-col items-center justify-center">
-         <DeviceLayout />
-       </div>
-     </DeviceProvider>
-     <Footer />
-    </>
-  );
+    <AppLayout />
+  ) 
 }
