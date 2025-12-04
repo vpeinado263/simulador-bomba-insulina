@@ -18,8 +18,10 @@ const WorkingRegion = ({ variant }) => {
   let defaultVariant;
   if (loading) defaultVariant = "loading";
   else if ((step === 1 || step === 2) && !inserted) defaultVariant = "insert";
-  else if ((step === 1 || step === 2) && inserted && !closed) defaultVariant = "close";
-  else if ((step === 1 || step === 2) && inserted && closed) defaultVariant = "infusing";
+  else if ((step === 1 || step === 2) && inserted && !closed)
+    defaultVariant = "close";
+  else if ((step === 1 || step === 2) && inserted && closed)
+    defaultVariant = "infusing";
 
   return defaultVariant ? variants[defaultVariant] : null;
 };

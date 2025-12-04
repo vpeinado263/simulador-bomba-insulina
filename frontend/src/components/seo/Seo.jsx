@@ -34,7 +34,6 @@ const Seo = ({
       <meta charSet="utf-8" />
       <meta httpEquiv="content-language" content="es" />
 
-
       {/* Open Graph */}
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />

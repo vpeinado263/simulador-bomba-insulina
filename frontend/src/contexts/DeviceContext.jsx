@@ -43,9 +43,9 @@ export const DeviceProvider = ({ children }) => {
 
   useEffect(() => {
     if (inserted && closed && step === 1) {
-      setStep(4); 
+      setStep(4);
       setTimeout(() => {
-        setStep(5); 
+        setStep(5);
       }, 3000);
     }
   }, [inserted, closed, step]);

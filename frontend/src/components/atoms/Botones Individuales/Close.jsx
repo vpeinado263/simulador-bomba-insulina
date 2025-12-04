@@ -1,11 +1,11 @@
 import { useDevice } from "@/contexts/DeviceContext";
 
 const Close = () => {
-  const { setClosed } = useDevice(); 
+  const { setClosed } = useDevice();
 
   return (
     <button
-      onClick={() => setClosed(true)} 
+      onClick={() => setClosed(true)}
       className="w-40 h-12
        bg-red-600
        text-white 
@@ -18,9 +18,8 @@ const Close = () => {
        active:shadow-inner transition"
     >
       Close Lever
-    </button>  
+    </button>
   );
 };
 
 export default Close;
-

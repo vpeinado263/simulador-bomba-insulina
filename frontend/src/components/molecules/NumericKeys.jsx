@@ -5,11 +5,7 @@ const NumericKeys = ({ onKeyPress }) => {
   return (
     <div className="grid grid-cols-3 gap-4">
       {keys.map((key) => (
-        <ButtonNumeric 
-        key={key} 
-        label={key} 
-        onClick={() => onKeyPress(key)}
-        />
+        <ButtonNumeric key={key} label={key} onClick={() => onKeyPress(key)} />
       ))}
     </div>
   );

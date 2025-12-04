@@ -23,4 +23,3 @@ const DeviceLayout = () => {
 };
 
 export default DeviceLayout;
-

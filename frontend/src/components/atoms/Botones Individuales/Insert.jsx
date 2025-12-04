@@ -3,9 +3,9 @@ import { useDevice } from "@/contexts/DeviceContext";
 const Insert = () => {
   const { setInserted } = useDevice();
   return (
-    <button 
-    onClick={() => setInserted(true)}
-    className="w-40 h-12 
+    <button
+      onClick={() => setInserted(true)}
+      className="w-40 h-12 
     bg-green-600 
     text-white 
     font-bold 

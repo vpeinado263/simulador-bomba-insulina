@@ -10,11 +10,11 @@ const StartupScreen = () => {
   return (
     <div className="w-64 h-60 bg-green-200 flex flex-col justify-between rounded-md">
       <div>
-        <StatusRegion variant="hospira"/>
+        <StatusRegion variant="hospira" />
       </div>
-      <WorkingRegion variant="loading"/>
+      <WorkingRegion variant="loading" />
       <div>
-        <MessageRegion showBattery={step !== 0}/>
+        <MessageRegion showBattery={step !== 0} />
       </div>
       <div>
         <SoftkeyLabel />

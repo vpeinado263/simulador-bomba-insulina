@@ -26,11 +26,7 @@ export default function App({ Component, pageProps }) {
 
       <DeviceProvider>
         <AppLayout>
-          {loading ? (
-            <SpinnerInicio />
-          ) : (
-            <Component {...pageProps} />
-          )}
+          {loading ? <SpinnerInicio /> : <Component {...pageProps} />}
         </AppLayout>
       </DeviceProvider>
     </>
